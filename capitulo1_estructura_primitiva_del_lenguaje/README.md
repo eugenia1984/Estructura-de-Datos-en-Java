@@ -206,7 +206,7 @@ Todos estos operadores se asocian de izquierda a derecha.
    *  ||  ( OR) - disyunción -
    *  !  ( NOT ) - negación - 
    
-&& y || son operaciones de **evalucaciñon cortocircuitables** , si el resultado puede determinarse examinando la primer expresión, entonces no se evalúa la segunda expresión. Por ejemplo: x != 0  &&  1/x 1= 3 . <br>
+&& y || son operaciones de **evalucación cortocircuitables** , si el resultado puede determinarse examinando la primer expresión, entonces no se evalúa la segunda expresión. Por ejemplo: x != 0  &&  1/x 1= 3 . <br>
 Si X es 0, la primer mitad es false y entonces el resultado de && es false, no calculo la segunda expresión. <br>
 
 
