@@ -9,6 +9,9 @@ El compilador local, **javac**, compila y genera archivos **.class**, que contie
 El **código de bytes Java** represetna el lenguaje intermedio portable que luego será interpretado ejecutando el **intérprete de Java**. <br>
 El intérprete de Java se conoce con el nombre de **Máquina virtual**.<br>
 
+---
+
+
 ## PRIMER PROGRAMA
 
 ```
@@ -20,6 +23,9 @@ public class FirstPrograma {
    }
 }
 ```
+
+---
+
 
 ## COMENTARIOS
 
@@ -46,6 +52,8 @@ Para utilizar JavaDOC, la cual generará la documentación del programa a partir
 Los comentarios facilitan la lectura del código y nos facilitan la comprensión del programa a nosotros mismos.
 
 
+---
+
 ## MAIN
 
 Un programa Java está compuesto por una colección de **clases** que interactúan, las cuales contienen una serie de **métodos**. <br<
@@ -55,6 +63,10 @@ Al ejecutar cualquier programa se invoca el método estático **main**. <br>
 ## SALIDAS A TRAVES DE TERMINAL
 
 **println** es el mecanismo de salida principal en Java.
+
+
+---
+
 
 ## TIPOS PRIMITIVOS
 
@@ -95,7 +107,7 @@ Existen las **secuencias de escape** que tiene usos específicos, por ejemplo: <
    * \' comilla simple
    * \" comilla doble
    
-## DECALRACION E INCIIALIZACION DE TIPOS PRIMITIVOS
+## DECLARACION E INICIALIZACION DE TIPOS PRIMITIVOS
 
 Se declaran proporcionando: **tipo**, **nombre (identificador)** y opcionalmente su **valor inicial** (cuando las declaro e inicializo al mismo tiempo). <br>
 
@@ -114,11 +126,16 @@ int x = 0, num1 = 0;  //se declaran dos entidades
 int mun2 = num1;
 ```
 
+---
+
+
 ## ENTRADA Y SALIDA POR TERMINAL
 
 **nextLine** y **println**. <br>
 Flujo de entrada **System.in** y flujo de calida **System.out** . <br>
 Para leer **String** asociamos un objeto **Scanner** con **system**. <br>
+
+---
 
 ## OPERADORES BÁSICOS
 
@@ -129,6 +146,7 @@ OPERADOR DE ASIGNACIÓN : <br>
    * *=  multiplica  el valor situado en el lado derecho (del propio operador) a la variable indicada del lado izquierdo, por ejemplo : X*=2 es lo mismo que X = X x 2.
    *  /=  divide  el valor situado en el lado derecho (del propio operador) a la variable indicada del lado izquierdo, por ejemplo : X/=3 es lo mismo que X = X / 3.
    
+   
 ## OPERADORES ARITMÉTICOS BINARIOS
 
    * +  SUMA
@@ -137,6 +155,7 @@ OPERADOR DE ASIGNACIÓN : <br>
    * /  DIVISION
    * %  MODULO (el residuo de la division, el resto)
 
+
 ## OPERADORES UNARIOS
 
    * - MENOS UNARIO, niega
@@ -144,6 +163,7 @@ OPERADOR DE ASIGNACIÓN : <br>
    * ++ AUTOINCREMENTO, que suma 1 a una variable. INCREMENTO PREFIJO (++X el valor de la expresión será el nuevo valor de X) o INCREMENTO POSTFIJO (X++ el valor de la expresión es el valor original).
    
    * -- DECREMENTO, que resta 1 a una variable
+
 
 ## CONVERSIONES DE TIPO 
 
