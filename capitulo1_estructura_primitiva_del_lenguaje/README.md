@@ -158,11 +158,11 @@ OPERADOR DE ASIGNACIÓN : <br>
 
 ## OPERADORES UNARIOS
 
-   * - MENOS UNARIO, niega
+   * -MENOS UNARIO, niega
    
-   * ++ AUTOINCREMENTO, que suma 1 a una variable. INCREMENTO PREFIJO (++X el valor de la expresión será el nuevo valor de X) o INCREMENTO POSTFIJO (X++ el valor de la expresión es el valor original).
+   * ++AUTOINCREMENTO, que suma 1 a una variable. INCREMENTO PREFIJO (++X el valor de la expresión será el nuevo valor de X) o INCREMENTO POSTFIJO (X++ el valor de la expresión es el valor original).
    
-   * -- DECREMENTO, que resta 1 a una variable
+   * --DECREMENTO, que resta 1 a una variable
 
 
 ## CONVERSIONES DE TIPO 
