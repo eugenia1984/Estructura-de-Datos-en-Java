@@ -209,5 +209,303 @@ Todos estos operadores se asocian de izquierda a derecha.
 && y || son operaciones de **evalucación cortocircuitables** , si el resultado puede determinarse examinando la primer expresión, entonces no se evalúa la segunda expresión. Por ejemplo: x != 0  &&  1/x 1= 3 . <br>
 Si X es 0, la primer mitad es false y entonces el resultado de && es false, no calculo la segunda expresión. <br>
 
+---
 
+
+### IF
+
+Su estructura es: <br>
+if ( expresion )
+  instruccion  <br>
+siguiente instruccion  <br>
+
+Si la expresión se evalúa como True, entonces se ejecuta instrucción, en caso contrario, no se ejecuta.  <br>
+Cuando se completa la instrucción if el control pasa a la siguiente instrucción.  <br>
+
+
+## IF ELSE
+
+Su estructura es:  <br>
+
+if ( expresion )  <br>
+  instruccion1  <br>
+else  <br>
+  instruccion2  <br>
+siguiente instruccion  <br>
+
+Si la expresión se evalúa como True, se ejecuta la instruccion1, sino se ejecuta la isntruccion2.  <br>
+Y luego pasa el control a la próxima instrucción.  <br>
+
+Ejemplo:  <br>
+
+```
+if( x == 0) {
+  System.out.println( "x is zero" );
+} else {
+  System.out.println( "x is : " );
+  System.out.println( x );
+}
+```
+
+Las instrucciones if pueden ser a su vez incluida dentro de una cláusala **if** o **else**, al igual que otras instrucciones de cotrol. <br>
+
+ 
+## WHILE
+
+Un ejemplo: <br>
+
+while( expresion ) <br>
+  instruccion <br>
+siguiente instruccion <br>  
+
+Si la expresión inicial es False, entonces nunca se ejecutará. <br>
+Mientras que la espreción es True, se ejecuta al instrucción. <br>
+Para evitar el bucle infinito, hay que ver que la condición en algún momento pase a ser False. <br>
+
+## FOR
+
+
+Para las iteraciones simples.<br>
+Por ejemplo: <br>
+
+for( inicializacion; comprobacion; actualizacion ) { <br>
+  instruccion <br>
+} <br>
+
+La instrucción for se ejecuta realizando primero la incialización, después que se comprueba que es true, se lleva a cabo las dos acciones sigueintes: se ejecuta la instrucción y luego se realiza la actualización. <br>
+
+Ejemplo: <br>
+
+```
+for( int i = 1; i <= 100; i++) {
+  System.out.println( i);
+}
+```
+
+Los bucles también puede anidarse, por ejemplo : <br>
+
+```
+for( int i = 1; i <= 10; i ++) {
+  for(int j = 1; j <= 10; j ++) {
+    if(i+j == i*j) {
+      System.out.println( i + "." + j);
+    }
+  }
+}
+```
+ 
+## DO
+
+La comprobación se realiza después de haber ejecutado la instrucción especificada, siempre se ejecuta, al menos una vez. <br>
+
+Ejemplo de sistaxis: <br>
+
+do { <br>
+  Pedir datos al usaurio; <br>
+  Leer el valor; <br>
+} while (el valor no sea correcto); <br>  
+  
+
+## BREAK Y CONTINUE
+
+**BREAK** puede estar dentro de un if y también se encuentra en un switch. <br>
+Dentro de un  if lo que hace es salir y pasar al próximo bloque de código. <br>
+Break hace que se salga del bucle o instrucción switch más internos. <br>
+La instrucción break etiquetada permite salir de un bucle anidado.<br>
+
+**CONTINUE** termina la iteracción actual de un bucle y se pasa directamente a la siguiente iteración. <br>
+Incluye ; y se utiliza en un bucle interno. <br>
+
+
+## SWITCH
+
+Se utiliza para seleccionar entre varios valores pequeños de tipo entero (o caracter). <br>
+Está compuesta por uan expresión y un bloque. <br>
+El bloque contiene una secuencia de instrucciones y una colección de etiquetas. <br>
+luego de cada case tengo el break y al final puedo tener un caso default. <br>
+
+
+## OPERADOR CONDICIONAL
+
+Es una abreviatura para instrucciones if-else simples. <br>
+Su formato es: <br>
+
+**comprobacionExp ? exprSi : exprNo** <br>
+
+En primer lugar se evalúa comprobacionExpr, seguida por exprSi o exprNo, generando así el resultado de la expresión completa. <br>
+exprSi se evalúa si la comprobacionExp es True. <br>
+En caso contrario se evalua exprNo.<br>
+
+  
+---
+
+## MÉTODOS
+
+Es lo que se llama **función** o **procedimiento** en otros lenguajes. <br>
+Una **cabecera del método** consta de un **nombre**, una **lista de parámetros** (posiblemente vacia) y un tipo de **retorno**. <br>
+El **cuerpo del método** es el código concreto para implementar el método, es un **bloque**. <br>
+Una declaración de método consta de una cabecera y un cuerpo. <br>
+
+Ejemplo: <br>
+
+```
+public class MinTest {
+
+  public static void main(String [] args) {
+  
+    int a = 3;
+    int b = 7;
+    System.out.println(min(a,b));
+  }
+  //declaración del método
+  public static int min( int x, int y) {
+    return x < y ? x : y;
+  }
+  
+}
+```
+
+El nombre del método es un **identificador**. <br>
+La lista de parámetros está compuesta por cero o más parámetros formales, cada uno de ellos con un tipo especificado. <br>
+Cuando se invoca un método, los argumentos reales se envían a los parámetros formales usando la asignación normal. <br>
+Los tipos primitivos se pasan utilizando únicamente paso de parámetros de tipo paso por valor. <br>
+Los argumentos reales no pueden ser modificados por la función. <br>
+La instrucción return se utiliza para devolver un valor al llamarte. <br>
+Si el tipo de retorno es **void**, entonces no se devuelve valor y no se debe utilizarse return dentro del método. <br>
+
+
+## NOMBRES DE MÉTODOS SOBRECARGADOS
+
+Java permite la sobrecarga de los nombres de métodos. Esto significa que **puede haber varios métodos con el mismo nombre** y que **tods ellos pueden declararse con el mismo ámbito de clase**, siempre y cuando sus **signaturas** (los tipos de su lista de parámetros) sean distintas. <br>
+Puede haber dos signaturas que tengan el mismo número de parámetros, siempre y cuando al menos uno de los tipos de esos parámetros sea distinto. <br>
+El tipo de retorno no se incluye en la signatura. No se puede tener dos métodos con el mismo ámbito de clase que solo se diferencien por el tipo de retorno.<br>
+Los métodos con diferentes ámbitos de clase pueden tener los mismos nombres, las mismas signaturas e incluso los mismos tipos de retorno. <br>
+
+## CLASES DE ALMACENAMIENTO
+
+Las entidades (variables) que e declaran dentro del cuerpo de un método son **varaibles locales** y solo se pueden acceder a ellas por su nombre dentro del cuerpo del método. Esta entidades se crean al ejecutarse el cuerpo del método y desaparecen cuando el cuerpo del método termina. <br>
+
+Una varaible decalrada fuera del ceurpo de un método será **global** para esa clase. Si se utiliza tanto **static** como **final** serán constantes simbólicas globales. <br>
+
+Por ejemplo: <br>
+
+```
+static final double PI = 3.1415926535897932;
+```
+
+las constantes se escriben todo en mayúscula.  Si tiene más de uan palabra se separa con guión bajo ( _ ).<br>
+
+
+---
+
+
+# RESUMEN
+
+**BLOQUE** es una secuencia de instrucciones enceradas entre llaves. <br>
+
+**BREAK** es una instrucción que permite salir de bloque o switch más interno. <br>
+
+**BREAK ETIQUETADA ( INSTRUCCIÓN)** es utilizada para salir de bucles anidados. <br>
+
+**CABECERA DE MÉTODO** está compuesta por el nombre, el tipo de reorno y la lista de parámetros. <br>
+
+**CONSTANTE DE CADENA** es una constante compuesta de caracteres encerrados entre dobles comillas. <br>
+
+**CONTINUE** es una instrucción que hace que se salte a la sigueinte iteración del bucle más interno. <br>
+
+**CODIGOS DE BYTES** es un código intermedio portable generado por el compilador Java.<br>
+
+**COMENTARIOS** hacen que le código sea más fácil de leer por parte de las personas, pero no tienen ningún significado semántico. Java tiene 3 tipos de comentarios. <br>
+
+**DECLARACIÓN DE MÉTODO** compuesta por CABECERA y CUERPO del MÉTODO.<br>
+
+**DO** estructura de bucle qeu garantiza que el bucle se ejecute al menos una vez.<br>
+
+**EVALUACIÓN CORTOCIRCUITABLE** si el resultado de un operador lógico puede determinarse examinando la primera expresión, entonces la segunda expresión no se evalúa. <br>
+
+**FOR** es una estructura de bucl utilizada pricnipalmente para iteraciones simples. <br>
+
+**IDENTIFICADOR** denomina una varaible o método. <br>
+
+**IF** instrucción fundamental para la implementación de la toma de decisiones. <br>
+
+**INSTRUCCIÓN NULA** compuesta por un solo punto y coma. <br>
+
+**JAVA** su intérprete procesa código de bytes.<br>
+
+**JAVAC** el compilador java, genera código de bytes. <br>
+
+**MAIN** método especial que se invoca al ejecutarse el programa. <br>
+
+**MÁQUINA VIRTUAL** el intérprete del código de bytes. <br>
+
+**MÉTODO** el equivalente de java de función. <br>
+
+**OPERADOR CONDICIONAL (?)** se utiliza en una expresión como abreviatura para instrucciones if-else sencillas. <br>
+
+**OPERADOR DE CONVERSIÓN TIPO** para generar una varaible temporal sin nombre de un nuevo tipo. <br>
+
+**OPERADORES ARITMÉTICOS BINARIOS** para efectuar las operaciones aritméticas básicas: +, -. *. / y %. <br>
+
+**OPERADORES DE ASIGNACIÓN** para modificar el valor de una variable: =, +=, -=, *=, /=. <br>
+
+**OPERADORES DE AUTOINCREMENTO (++) Y AUTODECREMENTO(--)** suman y restan 1, respectivamente. Hay dos formas: prefija y postfija. <br>
+
+**OPERADORES DE IGUALDAD**: == y != para comparar valores, devuelven true o false. <br>
+
+**OPERADORES LÓGICOS**: &&, || y !, simulan los conceptos de AND, OR, NOT. <br>
+
+**OPERADORES RELACIONALES** <, <=, >, >=, devuelven true o false. <br>
+
+**OPERADORES UNARIOS** requieren un operando: -, ++ o --. <br>
+
+**PASO POR VALOR** el mecanismo de paso de parámetros en Java mediante el cual se copia el argumento real en el parámetro formal. <br>
+
+**RETURN** devuelve la información al mmanate. <br>
+
+**SECUENCIA DE ESCAPE** representa ciertas constantes de carácter. <br>
+
+**SIGNATURA** nombre del método y de los tipos de lista de parámetros.
+
+**SOBRECARGA DE NOMBRES DE MÉTODOS** permite que haya varios métodos con el mismo nombre, siempre y cuando los tipos de su  lista de parámetros difieran. <br>
+
+**STATIC FINAL** constante global. <br>
+
+**STATIC** es un método. <br>
+
+**SWITCH** instrucción utilizada para seleccionar entre valores enteros peqeuños. <br>
+
+**TIPO ENTEROS** byte, char, short, int y long. <br>
+
+**TIPOS PRIMITIVOS** los enteros, de coma flotante, booleanos y de caracter. <br>
+
+**UNICODE** conjunto internacinal de caracteres que contiene más de 30.000 cracteres (los lenguajes más importantes).<br>
+
+**WHILE** la forma básica del bucle. <br>
+
+
+
+---
+
+
+## EJERCICIOS
+
+   * ¿Cuáles son los ocho tipos primitivos de Java ?
+
+   * Describe los tres tios de bucles existentes:  while, for y do.
    
+   *  ¿Qué extensiones se utilizan para los archivos feuntes Java y para los archivos compilados?
+   
+   * ¿Qué es lo que hace la instrucción continue?
+   
+   * Describir el método de paso por valor.
+   
+   * Describir los tres tiòs de comentarios utilizados en programas Java.
+   
+   * ¿Qué es la sobrecarga de métodos?
+   
+   * ¿Cuál es la diferencia entre los operadores * y *=?
+   
+   * Describir todos los usos de una instrucción break. ¿Qué es uan instrucción break etiquetada?
+   
+   * Explicar la diferencia ebtre los operadores de incremento prefijo y postfijo.
