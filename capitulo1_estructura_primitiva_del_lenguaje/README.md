@@ -149,11 +149,11 @@ OPERADOR DE ASIGNACIÓN : <br>
    
 ## OPERADORES ARITMÉTICOS BINARIOS
 
-   * +  SUMA
-   * -  RESTA
-   * *  MULTIPLICACION
-   * /  DIVISION
-   * %  MODULO (el residuo de la division, el resto)
+   * +SUMA
+   * -RESTA
+   * *MULTIPLICACION
+   * /DIVISION
+   * %MODULO (el residuo de la division, el resto)
 
 
 ## OPERADORES UNARIOS
