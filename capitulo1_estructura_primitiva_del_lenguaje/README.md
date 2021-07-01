@@ -179,7 +179,7 @@ Como el resultado es un número flotante, debo convertirlo de integer a float. <
 
 ---
 
-## INTORDUCCION CONDICIONALES
+## INTRODUCCION CONDICIONALES
 
 
 ### OPERADORES RELACIONALES Y DE IGUALDAD
