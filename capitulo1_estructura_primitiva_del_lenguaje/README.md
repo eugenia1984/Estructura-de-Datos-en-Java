@@ -189,10 +189,13 @@ Los **operadores de igualdad** son:
    * != (no son iguales)
 
 Los **operadores relacionales** son: <br>
-> mayor que <br>
->= mayor o igual que <br>
-< menor que <br>
-<= menor o igual que <br>
+
+```
+>    // mayor que 
+>=   // mayor o igual que
+<    // menor que 
+<=   // menor o igual que 
+```
 
 Los operadores relacionales tienen una precedencia inferior a los operadores aritméticos, pero mayor precedencia que lso operadores de asignación, de modo que frecuentemente es innecesario utilizar paréntesis. <br>
 Todos estos operadores se asocian de izquierda a derecha.
