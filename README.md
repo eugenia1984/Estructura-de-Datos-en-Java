@@ -6,6 +6,8 @@ En este repositorio encontrarán la teoria y mis ejercicios del libro **Estructu
 
 Lo dividi en los capìtulos como presenta el libro. Dentro de cada uno van a ver parte de teoría y los ejercicios resueltos por mi.
 
+   * Capitulo 1 : Estructura primitiva del Lenguaje Java
+
 ## Construido con 🛠️
 
 **JAVA**
